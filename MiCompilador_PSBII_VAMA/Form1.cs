@@ -103,5 +103,10 @@ namespace MiCompilador_PSBII_VAMA
         {
             leerLenguajeOriginal();
         }
+
+        private void prueba()
+        {
+
+        }
     }
 }
