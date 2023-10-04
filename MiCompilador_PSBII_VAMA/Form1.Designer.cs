@@ -72,7 +72,7 @@
             this.lenguajeTraducidoToolStripMenuItem,
             this.salirToolStripMenuItem});
             this.archivoToolStripMenuItem.Name = "archivoToolStripMenuItem";
-            this.archivoToolStripMenuItem.Size = new System.Drawing.Size(73, 26);
+            this.archivoToolStripMenuItem.Size = new System.Drawing.Size(73, 24);
             this.archivoToolStripMenuItem.Text = "Archivo";
             // 
             // lenguajeOriginalToolStripMenuItem
@@ -99,7 +99,7 @@
             this.ayudaToolStripMenuItem,
             this.ejemplosToolStripMenuItem});
             this.serviciosToolStripMenuItem.Name = "serviciosToolStripMenuItem";
-            this.serviciosToolStripMenuItem.Size = new System.Drawing.Size(81, 26);
+            this.serviciosToolStripMenuItem.Size = new System.Drawing.Size(81, 24);
             this.serviciosToolStripMenuItem.Text = "Servicios";
             // 
             // ayudaToolStripMenuItem
@@ -117,7 +117,7 @@
             // acercaDeToolStripMenuItem
             // 
             this.acercaDeToolStripMenuItem.Name = "acercaDeToolStripMenuItem";
-            this.acercaDeToolStripMenuItem.Size = new System.Drawing.Size(89, 26);
+            this.acercaDeToolStripMenuItem.Size = new System.Drawing.Size(89, 24);
             this.acercaDeToolStripMenuItem.Text = "Acerca de";
             // 
             // label1
@@ -209,7 +209,7 @@
             // btnCompilar
             // 
             this.btnCompilar.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCompilar.Location = new System.Drawing.Point(530, 332);
+            this.btnCompilar.Location = new System.Drawing.Point(464, 340);
             this.btnCompilar.Name = "btnCompilar";
             this.btnCompilar.Size = new System.Drawing.Size(151, 78);
             this.btnCompilar.TabIndex = 7;
