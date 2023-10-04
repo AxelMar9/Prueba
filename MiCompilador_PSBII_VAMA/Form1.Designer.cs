@@ -154,18 +154,18 @@
             // 
             this.lstLenguajeOriginal.FormattingEnabled = true;
             this.lstLenguajeOriginal.ItemHeight = 16;
-            this.lstLenguajeOriginal.Location = new System.Drawing.Point(57, 292);
+            this.lstLenguajeOriginal.Location = new System.Drawing.Point(57, 260);
             this.lstLenguajeOriginal.Name = "lstLenguajeOriginal";
-            this.lstLenguajeOriginal.Size = new System.Drawing.Size(260, 228);
+            this.lstLenguajeOriginal.Size = new System.Drawing.Size(512, 308);
             this.lstLenguajeOriginal.TabIndex = 4;
             // 
             // lstLenguajeTraducido
             // 
             this.lstLenguajeTraducido.FormattingEnabled = true;
             this.lstLenguajeTraducido.ItemHeight = 16;
-            this.lstLenguajeTraducido.Location = new System.Drawing.Point(744, 292);
+            this.lstLenguajeTraducido.Location = new System.Drawing.Point(744, 260);
             this.lstLenguajeTraducido.Name = "lstLenguajeTraducido";
-            this.lstLenguajeTraducido.Size = new System.Drawing.Size(289, 212);
+            this.lstLenguajeTraducido.Size = new System.Drawing.Size(512, 308);
             this.lstLenguajeTraducido.TabIndex = 5;
             // 
             // statusStrip1
@@ -209,9 +209,9 @@
             // btnCompilar
             // 
             this.btnCompilar.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCompilar.Location = new System.Drawing.Point(464, 340);
+            this.btnCompilar.Location = new System.Drawing.Point(575, 369);
             this.btnCompilar.Name = "btnCompilar";
-            this.btnCompilar.Size = new System.Drawing.Size(151, 78);
+            this.btnCompilar.Size = new System.Drawing.Size(163, 81);
             this.btnCompilar.TabIndex = 7;
             this.btnCompilar.Text = "Traducir";
             this.btnCompilar.UseVisualStyleBackColor = true;
