@@ -108,5 +108,10 @@ namespace MiCompilador_PSBII_VAMA
         {
 
         }
+
+        private void prueba2()
+        {
+
+        }
     }
 }
