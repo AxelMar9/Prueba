@@ -55,10 +55,18 @@ namespace MiCompilador_PSBII_VAMA
                             switch (tipoVariable)
                             {
                                 case "entero":
-                                    lenguajeTraducido.WriteLine($"Dim {nombreVariable} As Integer");
+                                    lenguajeTraducido.WriteLine("Dim {0} As Integer", nombreVariable);
+                                    break;
+
+                                case "decimal":
+                                    lenguajeTraducido.WriteLine("Dim {0} As Decimal", nombreVariable);
+                                    break;
+
+                                case "string":
+                                    lenguajeTraducido.WriteLine("Dim {0} As String", nombreVariable);
                                     break;
                                     // Puedes agregar más tipos de datos si es necesario
-                                    // case "texto":
+                                    // case "texto"
                                     //     lenguajeTraducido.WriteLine($"Dim {nombreVariable} As String");
                                     //     break;
                             }
@@ -127,14 +135,6 @@ namespace MiCompilador_PSBII_VAMA
             leerLenguajeOriginal();
         }
 
-        private void prueba()
-        {
 
-        }
-
-        private void prueba2()
-        {
-
-        }
     }
 }
