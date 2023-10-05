@@ -27,7 +27,8 @@ namespace MiCompilador_PSBII_VAMA
 
             while(linea != null)
             {
-                switch(linea)
+                string[] datos = linea.Split(' ');
+                switch(datos[0])
                 {
                     case "inicioclase":
                         lenguajeTraducido.WriteLine("Public Class");
@@ -43,6 +44,28 @@ namespace MiCompilador_PSBII_VAMA
 
                     case "finclase":
                         lenguajeTraducido.WriteLine("End Class");
+                        break;
+
+                    case "declara":
+                        if (datos.Length >= 4 && datos[2] == "como")
+                        {
+                            string nombreVariable = datos[1];
+                            string tipoVariable = datos[3];
+
+                            switch (tipoVariable)
+                            {
+                                case "entero":
+                                    lenguajeTraducido.WriteLine($"Dim {nombreVariable} As Integer");
+                                    break;
+                                    // Puedes agregar más tipos de datos si es necesario
+                                    // case "texto":
+                                    //     lenguajeTraducido.WriteLine($"Dim {nombreVariable} As String");
+                                    //     break;
+                            }
+                        }
+                        break;
+
+                    default: 
                         break;
 
                 }
