@@ -59,16 +59,17 @@ namespace MiCompilador_PSBII_VAMA
                                     break;
 
                                 case "decimal":
-                                    lenguajeTraducido.WriteLine("Dim {0} As Decimal", nombreVariable);
+                                    lenguajeTraducido.WriteLine("Dim {0} As Double", nombreVariable);
                                     break;
 
-                                case "string":
+                                case "cadena":
                                     lenguajeTraducido.WriteLine("Dim {0} As String", nombreVariable);
                                     break;
-                                    // Puedes agregar más tipos de datos si es necesario
-                                    // case "texto"
-                                    //     lenguajeTraducido.WriteLine($"Dim {nombreVariable} As String");
-                                    //     break;
+
+                                default:
+                                    
+                                    break;
+
                             }
                         }
                         break;
