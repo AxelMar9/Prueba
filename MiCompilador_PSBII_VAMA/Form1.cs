@@ -47,27 +47,28 @@ namespace MiCompilador_PSBII_VAMA
                         break;
 
                     case "declara":
-                        if (datos.Length >= 4 && datos[2] == "como")
+                        if (datos.Length >= 6 && datos[2] == "como" && datos[4] == "=")
                         {
                             string nombreVariable = datos[1];
                             string tipoVariable = datos[3];
+                            string tipoDato = datos[5];
 
                             switch (tipoVariable)
                             {
                                 case "entero":
-                                    lenguajeTraducido.WriteLine("Dim {0} As Integer", nombreVariable);
+                                    lenguajeTraducido.WriteLine("Dim {0} As Integer = {1}", nombreVariable, tipoDato);
                                     break;
 
                                 case "float":
-                                    lenguajeTraducido.WriteLine("Dim {0} As Float", nombreVariable);
+                                    lenguajeTraducido.WriteLine("Dim {0} As Float  = {1}", nombreVariable, tipoDato);
                                     break;
 
                                 case "decimal":
-                                    lenguajeTraducido.WriteLine("Dim {0} As Double", nombreVariable);
+                                    lenguajeTraducido.WriteLine("Dim {0} As Double  = {1}", nombreVariable, tipoDato);
                                     break;
 
                                 case "cadena":
-                                    lenguajeTraducido.WriteLine("Dim {0} As String", nombreVariable);
+                                    lenguajeTraducido.WriteLine("Dim {0} As String = {1}", nombreVariable, tipoDato);
                                     break;
 
                                 default:
