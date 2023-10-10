@@ -58,6 +58,10 @@ namespace MiCompilador_PSBII_VAMA
                                     lenguajeTraducido.WriteLine("Dim {0} As Integer", nombreVariable);
                                     break;
 
+                                case "float":
+                                    lenguajeTraducido.WriteLine("Dim {0} As Float", nombreVariable);
+                                    break;
+
                                 case "decimal":
                                     lenguajeTraducido.WriteLine("Dim {0} As Double", nombreVariable);
                                     break;
